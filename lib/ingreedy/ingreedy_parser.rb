@@ -9,7 +9,7 @@ class IngreedyParser
   def parse
     ingreedy_regex = %r{
       (?<amount> .?\d+(\.\d+)? ) {0}
-      (?<fraction> \d\/\d ) {0}
+      (?<fraction> \d+\/\d+ ) {0}
 
       (?<container_amount> \d+(\.\d+)?) {0}
       (?<container_unit> .+) {0}
